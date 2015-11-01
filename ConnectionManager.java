@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 import java.sql.*;
 
@@ -20,7 +21,7 @@ public class ConnectionManager {
 	   private static Connection conn;
 	   private static Statement stmt;
 	   
-	   private static void OpenConnection(){
+	   private static void openConnection(){
 		   try{
 			   System.out.println("Connecting to database...");
 			   conn = DriverManager.getConnection(DB_URL,USER,PASS);
@@ -31,7 +32,7 @@ public class ConnectionManager {
 		   }
 	   }
 	   
-	   private static void CloseConnection(){
+	   private static void closeConnection(){
 		   try{
 			   conn.close();
 		   }
@@ -40,24 +41,48 @@ public class ConnectionManager {
 		   }
 	   }
 	   
-	   private static void PushSchools(ArrayList<School> schools){
-		   TruncateSchools();		   
+	   public static void pushSchools(){
+		   truncateSchools();
+		   FileConnectionManager fcm = new FileConnectionManager();
+		   List<School> schools = fcm.getSchools();
+		   for(School s : schools){
+			   insertSchoolToDb(s);
+		   }
 	   }
 	   
-	   private static void TruncateSchools(){
+	   private static void insertSchoolToDb(School s) {	
+		   System.out.println("Inserting " + s.getName() + " into the database...");
+		   String sql = "INSERT INTO schools VALUES("
+		   		+ s.getNumber() + ",'" + s.getName() + "','" + s.getAddress() + "','" + 
+				   s.getUrl() + "'," +  "0,1,0,1,0,0,0,0,0,0,49.2786, -123.0803);";
 		   try{
-			   OpenConnection();
+			   openConnection();
+			   stmt = conn.createStatement();
+			   stmt.execute(sql);
+		   }
+		   catch (Exception e){
+			   e.printStackTrace();
+		   }
+		   finally{
+			   closeConnection();
+		   }
+	   }
+
+	   
+	   private static void truncateSchools(){
+		   try{
+			   openConnection();
 			   stmt = conn.createStatement();
 			   String sql;
-			   sql = "truncate table schoolLocation;";
+			   sql = "truncate table schools;";
 			   stmt.execute(sql);
 			   
 		   }
 		   catch (Exception e){
-			   
+			   e.printStackTrace();
 		   }
 		   finally{
-			   CloseConnection();
+			   closeConnection();
 		   }
 	   }
 
@@ -67,7 +92,8 @@ public class ConnectionManager {
 	   stmt = null;
 	   
 	   System.out.println("Truncating Tables...");
-	   TruncateSchools();
+	   pushSchools();
+	   
 	   
 	   /*try{
 	      //STEP 2: Register JDBC driver

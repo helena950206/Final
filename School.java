@@ -106,12 +106,12 @@ public class School {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	public School(String name, int number, String address, Location location,
+	public School(int number, String name, String address,
 			String url, boolean isPrivate, boolean hasEngLangLearnerProg,
 			boolean hasFrenchImmersionProg, boolean hasAborigSuppServices,
 			boolean hasContinuingEdProgram, boolean hasDistributedLearnProg,
 			boolean hasCareerPrepProg, boolean hasCoopProg,
-			boolean hasApprenticeshipProg, boolean hasCareerTechnicalProg) {
+			boolean hasApprenticeshipProg, boolean hasCareerTechnicalProg, Location location) {
 		super();
 		this.name = name;
 		this.number = number;

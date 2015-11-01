@@ -1,20 +1,22 @@
 
 public class Location {
-	private int LAT;
-	private int LONG;
-	public int getLAT() {
+	private double LAT;
+	private double LONG;
+	
+	public double getLAT() {
 		return LAT;
 	}
-	public void setLAT(int lAT) {
+	public void setLAT(double lAT) {
 		LAT = lAT;
 	}
-	public int getLONG() {
+	public double getLONG() {
 		return LONG;
 	}
-	public void setLONG(int lONG) {
+	public void setLONG(double lONG) {
 		LONG = lONG;
 	}
-	public Location(int lAT, int lONG) {
+	
+	public Location(double lAT, double lONG) {
 		super();
 		LAT = lAT;
 		LONG = lONG;
