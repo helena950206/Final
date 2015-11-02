@@ -88,5 +88,8 @@
     <orderEntry type="library" name="gwt-user" level="project" />
     <orderEntry type="library" name="gwt-ajaxloader-1.1.0" level="project" />
     <orderEntry type="library" name="gwt-maps-api-3.10.0-alpha-8-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.37-bin" level="project" />
+    <orderEntry type="library" name="opencsv-2.4" level="project" />
+    <orderEntry type="library" name="jdbc-api-1.4" level="project" />
   </component>
 </module>

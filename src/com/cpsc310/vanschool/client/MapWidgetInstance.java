@@ -101,16 +101,16 @@ public class MapWidgetInstance extends Composite {
         //eventually will get the data from mySQLConnector, for now just create one
         List<School> schoolList = new ArrayList<School>();
 
-        School school1 = new School("Point Grey Secondary", 3939012, "5350 Eest Boulevard", new Location(49.2379, -123.1534), "http://www.vsb.bc.ca/schools/point-grey", false, true, false, true, false, false, true, false, true, false);
+        School school1 = new School(3939012, "Point Grey Secondary", "5350 Eest Boulevard", "http://www.vsb.bc.ca/schools/point-grey", false, true, false, true, false, false, true, false, true, false, new Location(49.2379, -123.1534));
         schoolList.add(school1);
-        School school2 = new School("Maple Grove Elementary", 3939074, "6199 Cypress St", new Location(49.2294, -123.1515), "http://www.vsb.bc.ca/schools/maple-grove", false, true, false, true, false, false, false, false, false, false);
-        schoolList.add(school2);
-        School school3 = new School("Lord Byng Secondary", 3939008, "3939 W 16th Av", new Location(49.2596, -123.1925), "http://www.vsb.bc.ca/schools/lord-byng", false, true, false, true, false, false, true, false, true, true);
-        schoolList.add(school3);
-        School school4 = new School("Trafalgar Elementary", 3939084, "4170 Trafalgar St", new Location(49.2502, -123.1646), "http://www.vsb.bc.ca/schools/trafalgar", false, true, false, true, false, false, false, false, false, false);
-        schoolList.add(school4);
-        School school5 = new School("Templeton Secondary",3939010,"727 Templeton Drive", new Location(49.2784,-123.0607),"http://www.vsb.bc.ca/schools/templeton",false,true,false,true,false,false,true,false,true,false);
-        schoolList.add(school5);
+//        School school2 = new School("Maple Grove Elementary", 3939074, "6199 Cypress St", new Location(49.2294, -123.1515), "http://www.vsb.bc.ca/schools/maple-grove", false, true, false, true, false, false, false, false, false, false);
+//        schoolList.add(school2);
+//        School school3 = new School("Lord Byng Secondary", 3939008, "3939 W 16th Av", new Location(49.2596, -123.1925), "http://www.vsb.bc.ca/schools/lord-byng", false, true, false, true, false, false, true, false, true, true);
+//        schoolList.add(school3);
+//        School school4 = new School("Trafalgar Elementary", 3939084, "4170 Trafalgar St", new Location(49.2502, -123.1646), "http://www.vsb.bc.ca/schools/trafalgar", false, true, false, true, false, false, false, false, false, false);
+//        schoolList.add(school4);
+//        School school5 = new School("Templeton Secondary",3939010,"727 Templeton Drive", new Location(49.2784,-123.0607),"http://www.vsb.bc.ca/schools/templeton",false,true,false,true,false,false,true,false,true,false);
+//        schoolList.add(school5);
 
         return schoolList;
     }
