@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cfac7162-f84e-4b9c-b2a5-f287fcdb0882" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jdbc_api_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_37_bin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/opencsv_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Location.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/School.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gwt-unitCache/gwt-unitCache-c04dfa348afbdd12c2a9ddc3bc36901a78fa6812-00000150C673C33C" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ConnectionManager.java" afterPath="$PROJECT_DIR$/src/com/cpsc310/vanschool/client/ConnectionManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FileConnectionManager.java" afterPath="$PROJECT_DIR$/src/com/cpsc310/vanschool/client/FileConnectionManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.37-bin.jar" afterPath="$PROJECT_DIR$/war/WEB-INF/lib/mysql-connector-java-5.1.37-bin.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/opencsv-2.4.jar" afterPath="$PROJECT_DIR$/war/WEB-INF/lib/opencsv-2.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cpsc310/vanschool/client/MapWidgetInstance.java" afterPath="$PROJECT_DIR$/src/com/cpsc310/vanschool/client/MapWidgetInstance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cpsc310/vanschool/client/School.java" afterPath="$PROJECT_DIR$/src/com/cpsc310/vanschool/client/School.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VanSchool.iml" afterPath="$PROJECT_DIR$/VanSchool.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="cfac7162-f84e-4b9c-b2a5-f287fcdb0882" name="Default" comment="" />
     <ignored path="VanSchool.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/war/WEB-INF/classes/" />
@@ -835,12 +817,12 @@
       <created>1446437256428</created>
       <option name="number" value="Default" />
       <updated>1446437256428</updated>
-      <workItem from="1446437260247" duration="3023000" />
+      <workItem from="1446437260247" duration="3143000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3023000" />
+    <option name="totallyTimeSpent" value="3143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="31" width="1920" height="1049" extended-state="6" />
