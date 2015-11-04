@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+    <servlet-name>ConnectionManagerImpl</servlet-name>
+    <servlet-class>com.tutorial.gwt.server.ConnectionManagerImpl</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FileConnectionManagerImpl</servlet-name>
+    <servlet-class>com.tutorial.gwt.server.FileConnectionManagerImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConnectionManagerImpl</servlet-name>
+    <url-pattern>/Hello/school</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileConnectionManagerImpl</servlet-name>
+    <url-pattern>/Hello/file</url-pattern>
+  </servlet-mapping>
+
+
+<!-- Default page to serve 
+  <welcome-file-list>
+    <welcome-file>Project.html</welcome-file>
+  </welcome-file-list>-->
+  </web-app>
